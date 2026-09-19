@@ -1,4 +1,24 @@
-# React + Vite
+# OctoFit Tracker frontend
+
+The presentation tier runs on port `5173` and calls the Node API on port `8000`.
+
+## API URL
+
+Create `octofit-tracker/frontend/.env.local` for Codespaces:
+
+```env
+VITE_CODESPACE_NAME=your-codespace-name
+```
+
+Vite exposes this value through `import.meta.env.VITE_CODESPACE_NAME`. When it is not defined, the app safely uses `http://localhost:8000`.
+
+## Development
+
+```bash
+npm run dev --prefix octofit-tracker/frontend
+```
+
+The app uses React Router for the overview, activities, leaderboard, teams, athletes, and workouts views.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
